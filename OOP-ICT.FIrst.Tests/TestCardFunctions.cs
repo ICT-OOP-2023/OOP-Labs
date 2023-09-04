@@ -11,7 +11,7 @@ public class TestCardFunctions
     [Fact]
     public void AreEquals_InputIsValueAndSuit_ReturnTrue()
     {
-        // Пока карты на написаны,давайте проверим числа и строки
+        // Пока карты не написаны ,давайте проверим числа и строки
         var value = 10;
         var suit = "some suit";
         
