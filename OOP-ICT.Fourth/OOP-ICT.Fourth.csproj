@@ -5,19 +5,24 @@
         <TargetFramework>net7.0</TargetFramework>
         <RootNamespace>OOP_ICT.Fourth</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="obj\**" />
+        <Compile Remove="obj\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Remove="obj\**" />
+        <EmbeddedResource Remove="obj\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="obj\**" />
+        <None Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OOP-ICT.Second\OOP-ICT.Second.csproj" />
+        <ProjectReference Include="..\OOP-ICT.Third\OOP-ICT.Third.csproj" />
     </ItemGroup>
 
 </Project>
