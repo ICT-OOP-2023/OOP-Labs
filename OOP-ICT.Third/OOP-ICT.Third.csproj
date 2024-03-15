@@ -5,19 +5,29 @@
         <TargetFramework>net7.0</TargetFramework>
         <RootNamespace>OOP_ICT.Third</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
+        <Nullable>disable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="obj\**" />
+        <Compile Remove="obj\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <EmbeddedResource Remove="obj\**" />
+        <EmbeddedResource Remove="obj\**" />
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="obj\**" />
+        <None Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OOP-ICT.First\OOP-ICT.First.csproj" />
+        <ProjectReference Include="..\OOP-ICT.Second\OOP-ICT.Second.csproj"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="xunit" Version="2.7.0" />
     </ItemGroup>
 
 </Project>
+
