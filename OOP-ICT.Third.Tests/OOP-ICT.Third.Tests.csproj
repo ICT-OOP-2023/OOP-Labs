@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <RootNamespace>OOP_ICT.Third.Tests</RootNamespace>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
@@ -18,6 +18,11 @@
 
     <ItemGroup>
       <None Remove="obj\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\OOP-ICT.Second.Tests\OOP-ICT.Second.Tests.csproj" />
+      <ProjectReference Include="..\OOP-ICT.Third\OOP-ICT.Third.csproj" />
     </ItemGroup>
 
 </Project>
