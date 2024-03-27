@@ -6,7 +6,7 @@ internal abstract class Program
 {
     private static void Main()
     {
-        var dealer = new Dealer();
+        var dealer = new IDealer();
         
         var hand = dealer.DealCards(5);
 

@@ -7,9 +7,9 @@ namespace OOP_ICT.Third.Models;
 public class DealerTurnStrategy : ITurnStrategy
 {
     private readonly Func<string, bool> _userPrompt;
-    private readonly Dealer _dealer;
+    private readonly IDealer _dealer;
 
-    public DealerTurnStrategy(Func<string, bool> userPrompt, Dealer dealer)
+    public DealerTurnStrategy(Func<string, bool> userPrompt, IDealer dealer)
     {
         _userPrompt = userPrompt;
         _dealer = dealer;

@@ -8,7 +8,7 @@ public class TestCardFunctions
     [Fact]
     public void DealingCardsReducesDeckSize()
     {
-        var dealer = new Dealer();
+        var dealer = new IDealer();
         var initialDeckSize = dealer.Deck.GetShuffledDeck().Count;
 
         var hand = dealer.DealCards(5).ToList();
@@ -19,7 +19,7 @@ public class TestCardFunctions
     [Fact]
     public void DealingCardsReturnsCorrectNumberOfCards()
     {
-        Dealer dealer = new Dealer();
+        IDealer dealer = new IDealer();
 
         var hand = dealer.DealCards(5);
 
@@ -29,7 +29,7 @@ public class TestCardFunctions
     [Fact]
     public void ShuffledDeckHas52Cards()
     {
-        var dealer = new Dealer();
+        var dealer = new IDealer();
 
         var shuffledDeck = dealer.Deck.GetShuffledDeck();
 

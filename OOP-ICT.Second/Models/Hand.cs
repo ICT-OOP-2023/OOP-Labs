@@ -7,6 +7,15 @@ public class Hand
 {
     private readonly List<Card> _cards = new();
 
+    public Hand()
+    {
+    }
+
+    public Hand(List<Card> cards)
+    {
+        _cards = cards;
+    }
+
     public IReadOnlyCollection<Card> Cards => _cards;
 
     public void AddCard(Card card)
@@ -52,5 +61,15 @@ public class Hand
             default:
                 return (int)card.Rank;
         }
+    }
+
+    public void ReplaceCard(int index, IDealer dealer)
+    {
+        if (index < 0 || index >= Cards.Count)
+        {
+            throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
+        }
+
+        _cards[index] = dealer.DealCards(1).First();
     }
 }

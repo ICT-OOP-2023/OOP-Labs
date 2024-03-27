@@ -1,8 +1,8 @@
 ﻿namespace OOP_ICT.Models;
 
-public class Dealer
+public class IDealer
 {
-    public Dealer()
+    public IDealer()
     {
         Deck = new Deck();
         Deck.Shuffle();

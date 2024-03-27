@@ -11,7 +11,7 @@ public class Player
     }
 
     public IPlayerAccount Account { get; }
-    public Hand Hand { get; private set; } = new();
+    public Hand Hand { get; set; } = new();
     public decimal CurrentBet { get; private set; }
 
     public void PlaceBet(decimal amount)

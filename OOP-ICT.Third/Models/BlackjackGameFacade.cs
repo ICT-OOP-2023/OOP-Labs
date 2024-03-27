@@ -11,14 +11,14 @@ public class BlackjackGameFacade
 
     public BlackjackGameFacade(IBank bank)
     {
-        Dealer = new Dealer();
+        Dealer = new IDealer();
         DealersHand = new Hand();
 
         _players = new List<Player>();
         BlackjackCasino = new BlackjackCasino(bank);
     }
 
-    public Dealer Dealer { get; }
+    public IDealer Dealer { get; }
 
     public IReadOnlyCollection<Player> Players => _players;
 
